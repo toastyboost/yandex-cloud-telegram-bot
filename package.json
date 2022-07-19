@@ -1,0 +1,34 @@
+{
+  "name": "yandex-cloud-telegram-bot",
+  "version": "1.0.0",
+  "description": "Template for deploying Node.js Telegram bot to Yandex Cloud Funcions with Serverless framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toastyboost/yandex-cloud-telegram-bot.git"
+  },
+  "keywords": [
+    "yandex",
+    "cloud",
+    "functions",
+    "telegram",
+    "bot",
+    "serverless",
+    "nodejs"
+  ],
+  "author": "https://github.com/toastyboost/",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toastyboost/yandex-cloud-telegram-bot/issues"
+  },
+  "dependencies": {
+    "telegraf": "^4.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6",
+    "serverless-dotenv-plugin": "^4.0.1"
+  }
+}

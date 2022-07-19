@@ -1,0 +1,25 @@
+service: bot
+frameworkVersion: "3"
+
+provider: 
+  name: yandex-cloud 
+  runtime: nodejs16 
+  httpApi: 
+    payload: '1.0' 
+  
+functions: 
+  echo:
+    handler: dist/index.echoHandler 
+    memorySize: 128 
+    timeout: 3
+
+plugins: 
+  - "@yandex-cloud/serverless-plugin"
+  - "serverless-dotenv-plugin"
+  
+package: 
+  patterns: 
+  - '!**' 
+  - package.json 
+  - package-lock.json 
+  - dist/*.js
