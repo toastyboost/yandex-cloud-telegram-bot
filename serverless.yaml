@@ -1,6 +1,8 @@
 service: bot
 frameworkVersion: "3"
 
+useDotenv: true
+
 provider: 
   name: yandex-cloud 
   runtime: nodejs16 
@@ -9,6 +11,8 @@ provider:
   
 functions: 
   echo:
+    environment:
+      TELEGRAM_BOT_TOKEN: ${env:BOT_TOKEN}
     handler: dist/index.echoHandler 
     memorySize: 128 
     timeout: 3
