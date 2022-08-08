@@ -12,4 +12,10 @@ touch .env.development .env.production
 
 ## commands
 
-##
+`npm run build` - build app with typescript
+`npm run deploy-dev` - deploy app to dev
+`npm run deploy-prod` - deploy app to prod
+
+## todo
+
+- [ ]
